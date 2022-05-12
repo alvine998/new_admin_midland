@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/new_admin_midland/static/css/main.2d6fa31c.css",
+    "main.js": "/new_admin_midland/static/js/main.3b15a0af.js",
+    "static/js/787.821b1e64.chunk.js": "/new_admin_midland/static/js/787.821b1e64.chunk.js",
+    "index.html": "/new_admin_midland/index.html",
+    "main.2d6fa31c.css.map": "/new_admin_midland/static/css/main.2d6fa31c.css.map",
+    "main.3b15a0af.js.map": "/new_admin_midland/static/js/main.3b15a0af.js.map",
+    "787.821b1e64.chunk.js.map": "/new_admin_midland/static/js/787.821b1e64.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d6fa31c.css",
+    "static/js/main.3b15a0af.js"
+  ]
+}
