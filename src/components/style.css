@@ -1,0 +1,115 @@
+/* Add custom font */
+@font-face {
+    font-family: 'poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+/* Sidebar */
+
+.sider{
+    background-color: black;
+    height: 100vh;
+    padding: 20px;
+    width: 17%;
+    position: fixed;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'poppins';
+}
+
+.coloring{
+    color: #e4d00a;
+    font-size: large;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    opacity: 0.7;
+    border-bottom: 0px solid #fff;
+    border-bottom-width: 0%;
+}
+
+.over-height{
+    margin-top: 20px;
+}
+
+.coloring:hover{
+    color: #e4d00a;
+    opacity: 1;
+    border-bottom: 1px solid #fff;
+    padding: 0 0 4px;
+}
+
+.active{
+    color: #e4d00a;
+    opacity: 1;
+    border-bottom: 1px solid #fff;
+    padding: 0 0 4px;
+}
+
+.img-logo-size{
+    width: 70px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.coloring-fa{
+    color: #e4d00a;
+    transition: all 0.5s ease;
+    opacity: 0.7;
+    width: 20px;
+    height: 20px;
+}
+
+.coloring-fa:hover{
+    color: #e4d00a;
+    opacity: 1;
+}
+
+/* Footer */
+.footer-height{
+    background-color: black;
+    height: 200px;
+    margin-left: -50px;
+    width: 120%;
+}
+
+.footer-pad{
+    padding-left: 200px;
+    padding-top: 20px;
+}
+
+.footer-img{
+    width: 100px;
+    height: 150px;
+}
+
+p{
+    color: white;
+    font-family: 'poppins';
+}
+
+.footer-address{
+    font-size: small;
+}
+
+/* Card */
+.card{
+    margin-top: 20px;
+    width: 18rem;
+}
+
+.card-text{
+    color: black;
+}
+
+.card-img-zoom{
+    width: 700px;
+    height: 550px;
+}
