@@ -1,11 +1,14 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import swal from 'sweetalert';
+import {useNavigate} from 'react-router-dom';
 import './style.css'
 
 const Login = (props) => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const [actived, setActived] = useState('true')
+    const navigate = useNavigate()
 
     const onLogin = () => {
         if(!username){
@@ -18,12 +21,14 @@ const Login = (props) => {
         } else {
             const result = {
                 username: username,
-                password: password
+                password: password,
+                actived: actived
             }
             axios.post(`http://localhost:3001/admins/login`, result).then(
                 res => {
                     console.log(res.data)
                     swal("Selamat datang kembali admin",{icon:"success"})
+                    navigate("/dashboard")
                 }
             )
             .catch(err => {
@@ -35,7 +40,7 @@ const Login = (props) => {
     return (
         <div>
             <div className='box-login'>
-                <h2 style={{textAlign:"center", color:"green"}}>Admin Login</h2>
+                <h2 style={{textAlign:"center", color:"green"}}>Midland Properti<br/>Login</h2>
                 <div style={{paddingTop:20}}>
                     <input type={"text"} value={username} onChange={(e)=>setUsername(e.target.value)} placeholder="username" className='form-control'/>
                 </div>
